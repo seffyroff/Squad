@@ -3,12 +3,12 @@
 ############################################################
 FROM cm2network/steamcmd:root
 
-LABEL maintainer="walentinlamonos@gmail.com"
+LABEL maintainer="seffyroff@gmail.com"
 
-ENV STEAMAPPID 403240
+ENV STEAMAPPID 774961
 ENV STEAMAPP squad
 ENV STEAMAPPDIR "${HOMEDIR}/${STEAMAPP}-dedicated"
-ENV DLURL https://raw.githubusercontent.com/CM2Walki/Squad
+ENV DLURL https://raw.githubusercontent.com/seffyroff/Squad
 
 RUN set -x \
 	&& apt-get update \

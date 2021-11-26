@@ -1,7 +1,7 @@
 #!/bin/bash
 bash "${STEAMCMDDIR}/steamcmd.sh" +login anonymous \
 				+force_install_dir "${STEAMAPPDIR}" \
-				+app_update "${STEAMAPPID}" \
+				+app_update "${STEAMAPPID}" -beta "${STEAMBETANAME}" -betapassword "${STEAMBETAPASSWD}" \
 				+quit
 
 # Change rcon port on first launch, because the default config overwrites the commandline parameter (you can comment this out if it has done it's purpose)
